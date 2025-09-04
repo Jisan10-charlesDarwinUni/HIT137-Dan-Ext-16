@@ -1,3 +1,7 @@
+from pathlib import Path
+
+def shift_char(ch, shift, base, size=26):
+    return chr((ord(ch) - base + shift) % size + base)
 def encrypt_text(plain: str, shift1: int, shift2: int) -> str:
     out = []
     for ch in plain:
