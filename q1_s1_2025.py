@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-from pathlib import Path
-
 def encrypt_text(plain: str, shift1: int, shift2: int) -> str:
     out = []
     for ch in plain:
